@@ -63,7 +63,7 @@ public class RNFileViewerModule extends ReactContextBaseJavaModule {
     }
 
     if(contentUri == null) {
-      sendEvent(OPEN_EVENT, currentId, "Invalid file");
+      sendEvent(OPEN_EVENT, currentId, "Arquivo inválido");
       return;
     }
 
@@ -79,7 +79,7 @@ public class RNFileViewerModule extends ReactContextBaseJavaModule {
     Intent intentActivity;
 
     if (showOpenWithDialog) {
-      intentActivity = Intent.createChooser(shareIntent, "Open with");
+      intentActivity = Intent.createChooser(shareIntent, "Abrir com");
     } else {
       intentActivity = shareIntent;
     }
